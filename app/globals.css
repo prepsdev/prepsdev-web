@@ -3,14 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --maincolor: #ffd600;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --maincolor: #ffd600;
   }
 }
 
@@ -22,9 +24,102 @@ body {
 h1,
 h2,
 h3 {
-  @apply bg-gradient-to-b from-[#F5F5F5] to-[#ebebebbd] text-transparent bg-clip-text;
+  @apply bg-gradient-to-b from-[#ededed] to-[#ebebebbd] text-transparent bg-clip-text;
 }
 
 p {
   @apply text-[#EBEBEB];
+}
+
+#main {
+  @apply flex flex-col items-center justify-center text-center h-auto pt-72 pb-44 mx-5;
+}
+
+#main h1 {
+  @apply text-5xl font-bold;
+}
+
+#main p {
+  @apply mt-2 text-gray-400 text-lg max-w-2xl;
+}
+
+#main p b {
+  @apply text-foreground;
+}
+
+.main-btn {
+  @apply mt-6 px-6 py-3 border bg-white text-black rounded text-lg font-medium transition hover:bg-gray-100;
+}
+
+/* About Section */
+#about {
+  @apply flex flex-col items-center justify-center text-center h-auto pt-20 pb-20 mx-5;
+}
+
+#about h2 {
+  @apply text-4xl font-bold;
+}
+
+#about p {
+  @apply mt-2 text-gray-400 text-lg max-w-2xl;
+}
+
+/* Grid Layout */
+.about-grid {
+  @apply mt-10 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-5xl w-full;
+}
+
+/* Card Styles */
+.about-card {
+  @apply relative p-2 border border-neutral-700 rounded-lg shadow-lg z-0;
+}
+
+.about-card-content {
+  @apply py-10 px-6 text-center bg-gradient-to-t from-black to-neutral-900 rounded-md h-full;
+}
+
+.about-card h3 {
+  @apply text-2xl font-bold text-foreground;
+}
+
+.about-card p {
+  @apply mt-4 text-gray-400 text-lg max-w-2xl mx-auto;
+}
+
+/* Neon Line Effect */
+.neon-line {
+  @apply absolute top-0 left-1/2 -translate-x-1/2 w-72 h-1 blur-sm z-10;
+}
+
+.neon-red {
+  @apply bg-gradient-to-r from-transparent via-red-500 to-transparent;
+}
+
+.neon-green {
+  @apply bg-gradient-to-r from-transparent via-green-500 to-transparent;
+}
+
+.neon-blue {
+  @apply bg-gradient-to-r from-transparent via-blue-500 to-transparent;
+}
+
+/* Service Section */
+.service-section {
+  @apply flex flex-col items-center justify-center text-center h-auto pt-5 pb-20 mx-5;
+}
+
+.service-heading {
+  @apply text-4xl font-bold;
+}
+
+.service-text {
+  @apply m-2 text-gray-400 text-lg max-w-2xl;
+}
+
+.service-icons {
+  @apply flex justify-center gap-6 mt-6;
+}
+
+.service-icons img {
+  @apply w-12 h-12;
 }
