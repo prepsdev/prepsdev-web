@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "preps.dev",
     images: [
       {
-        url: "https://preps.dev/logo.png", // Replace with your actual image
+        url: "https://preps.dev/favicon.ico", // Replace with your actual image
         width: 1200,
         height: 400,
         alt: "preps.dev - Jasa Pembuatan Website & Aplikasi Profesional",
