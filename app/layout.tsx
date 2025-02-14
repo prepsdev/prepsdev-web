@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   title: "preps.dev | Jasa Pembuatan Website & Aplikasi Profesional",
   description:
     "Butuh website profesional? preps.dev siap membantu Anda membuat website dan aplikasi berkualitas tinggi dengan teknologi modern.",
+  icons: {
+    icon: "/favicon.ico", // Default favicon
+    shortcut: "/favicon.ico",
+  },
   keywords: [
     "jasa pembuatan website",
     "jasa website profesional",
