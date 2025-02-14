@@ -1,5 +1,4 @@
 import { Code2, MonitorSmartphone, Server } from "lucide-react"
-import Image from "next/image"
 import Link from "next/link"
 
 const Home = () => {
