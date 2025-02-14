@@ -10,7 +10,9 @@ const Home = () => {
           As a passionate web developer, I build <b>modern and high-performance</b> websites
           that help freelancers, startups, and businesses succeed online.
         </p>
-        <Link href="/" className="mt-6 px-6 py-3 border bg-neutral-200 text-black rounded text-lg font-medium transition hover:bg-gray-100">
+        <Link
+          href="https://wa.me/6289666075500" className="mt-6 px-6 py-3 border bg-neutral-200 text-black rounded text-lg font-medium transition hover:bg-gray-100" target="_blank"
+          rel="noopener noreferrer">
           Lets Work Together
         </Link>
       </section>

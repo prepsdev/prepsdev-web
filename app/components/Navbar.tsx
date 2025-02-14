@@ -91,7 +91,8 @@ const Navbar = () => {
                         whileHover={{ scale: 1.1, rotate: [0, 10, -10, 0], transition: { duration: 0.4 } }}
                         whileTap={{ scale: 0.9 }}
                     >
-                        <Link href="/contact" className="block bg-white text-black px-4 py-2 rounded-full font-medium hover:bg-gray-300 transition flex items-center justify-center"
+                        <Link
+                            href="https://wa.me/6289666075500" className="block bg-white text-black px-4 py-2 rounded-full font-medium hover:bg-gray-300 transition flex items-center justify-center"
                             target="_blank"
                             rel="noopener noreferrer">
                             <Handshake size={20} className="mr-2" /> Hire Me
