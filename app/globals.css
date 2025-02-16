@@ -104,22 +104,53 @@ p {
 }
 
 /* Service Section */
-.service-section {
-  @apply flex flex-col items-center justify-center text-center h-auto pt-5 pb-20 mx-5;
+#service {
+  @apply flex flex-col items-center justify-center text-center h-auto pt-20 pb-20 mx-5;
 }
 
-.service-heading {
+/* Grid Layout */
+.service-grid {
+  @apply mt-10 grid grid-cols-1 lg:grid-cols-3 gap-0 max-w-5xl w-full;
+}
+
+/* Card Styles */
+.service-card {
+  @apply relative p-2 border border-neutral-700 rounded-lg shadow-lg z-0;
+}
+
+.service-card-content {
+  @apply py-10 px-6 text-center bg-gradient-to-t from-black to-neutral-900 rounded-md h-full;
+}
+
+/* Stack Section */
+#stack {
+  @apply flex flex-col items-center justify-center text-center h-auto pt-20 pb-20 mx-5;
+}
+
+#stack h2 {
   @apply text-4xl font-bold;
 }
 
-.service-text {
+#stack p {
+  @apply mt-2 text-gray-400 text-lg max-w-2xl;
+}
+
+.stack-section {
+  @apply flex flex-col items-center justify-center text-center h-auto pt-5 pb-20 mx-5;
+}
+
+.stack-heading {
+  @apply text-4xl font-bold;
+}
+
+.stack-text {
   @apply m-2 text-gray-400 text-lg max-w-2xl;
 }
 
-.service-icons {
+.stack-icons {
   @apply flex justify-center gap-6 mt-6;
 }
 
-.service-icons img {
+.stack-icons img {
   @apply w-12 h-12;
 }

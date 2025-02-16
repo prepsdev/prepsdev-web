@@ -60,7 +60,7 @@ const Home = () => {
         <p>No matter the challenge, I craft solutions that work beautifully and efficiently.</p>
       </section>
 
-      <section id="service" className="flex flex-col items-center justify-center text-center h-auto pt-5 pb-20 mx-5">
+      <section id="stack" className="flex flex-col items-center justify-center text-center h-auto pt-5 pb-20 mx-5">
         <h2 className="text-4xl font-bold">Which Side Are You On?</h2>
         <p className="m-2 text-gray-400 text-lg max-w-2xl">
           No wrong choices here. <i>Just pick your side and start building.</i>
